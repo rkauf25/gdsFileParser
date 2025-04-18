@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <cassert>
+#include <cstdlib>
 
 using namespace std;
 
@@ -54,25 +55,36 @@ vector<pair<int, int>> find_corners(istream &input, int iterations) {
     return path_corners;
 }
 
-void find_path(istream &input, int layer) {
+void find_path(istream &input, int layer, vector<int>& removed_paths, int& paths_seen) {
     string line;
-    while(line != "Path start") {
-        getline(input, line);
-
-        if(input.eof()) {
-            return;
-        }
-    }
-
     string junk;
     string read_layer;
     int num_coords;
 
-    input >> junk >> read_layer; //ingoring beginning of line (always "Layer:")
+    while(true) {
+        while(line != "Path start") {
+            getline(input, line);
+    
+            if(!input.good()) {
+                return;
+            }
+        }
+        line = "";
 
-    if(atoi(read_layer.c_str()) != layer) { //checking that the layer is what we want
-        return;
+        input >> junk >> read_layer; //ingoring beginning of line (always "Layer:")
+
+        if(atoi(read_layer.c_str()) == layer) {
+            int x = rand() % 5;
+            if(x == 1) {
+                break;
+            }
+        }
+
+        ++paths_seen;
     }
+
+    removed_paths.push_back(paths_seen);
+    ++paths_seen;
 
     getline(input, junk); // reading endline
     getline(input, junk); // Data Type line (ignored)
@@ -85,39 +97,48 @@ void find_path(istream &input, int layer) {
 
     getline(input, junk); // reading endline
 
-    cout << read_layer << " " << width << " " << num_coords << endl << endl;
+    // cout << read_layer << " " << width << " " << num_coords << endl << endl;
 
-    corners = find_corners(input, num_coords);
+    vector<pair<int,int>> temp = find_corners(input, num_coords);
+    corners.insert(corners.end(), temp.begin(), temp.end());
 
-    for(int i = 0; i < corners.size(); ++i) {
-        cout << "(" << corners[i].first << "," << corners[i].second << ")" << endl;
-    }
-    cout << endl;
+    // for(int i = 0; i < corners.size(); ++i) {
+    //     cout << "(" << corners[i].first << "," << corners[i].second << ")" << endl;
+    // }
+    // cout << endl;
 
     return;
 
 }
 
-void find_vias(istream &input, int layer) {
+void find_vias(istream &input, int layer, vector<int>& removed_vias, int& vias_seen) {
     string line;
-    while(line != "Boundry start") {
-        getline(input, line);
-
-        if(input.eof()) {
-            return;
-        }
-    }
-
     string junk;
     string read_layer;
     int num_coords;
-    vector<pair<int,int>> via_corners;
 
-    input >> junk >> read_layer; //ingoring beginning of line (always "Layer:")
+    while(true) {
+        while(line != "Boundry start") {
+            getline(input, line);
+    
+            if(input.eof()) {
+                return;
+            }
+        }
+        line = "";
 
-    if(atoi(read_layer.c_str()) != layer + 1 && atoi(read_layer.c_str()) != layer - 1) { //checking that the layer is one higher or lower than the path
-        return;
+        input >> junk >> read_layer; //ingoring beginning of line (always "Layer:")
+
+        if(atoi(read_layer.c_str()) == layer + 1 || atoi(read_layer.c_str()) == layer - 1) { //checking that the layer is one higher or lower than the path
+            break;
+        }
+
+        ++vias_seen;
+        // cout << "vias: " << vias_seen << endl;
     }
+
+
+    vector<pair<int,int>> via_corners;
 
     getline(input, junk); // reading endline
     getline(input, junk); // Data Type line (ignored)
@@ -149,17 +170,23 @@ void find_vias(istream &input, int layer) {
     }
 
     if(inside_path) {
-        cout << read_layer << endl;
-        for(int i = 0; i < via_corners.size(); ++i) {
-            cout << "(" << via_corners[i].first << "," << via_corners[i].second << ")" << endl;
-        }
-        cout << endl;
+        removed_vias.push_back(vias_seen);
     }
+    ++vias_seen;
+
+    // if(inside_path) {
+    //     cout << read_layer << endl;
+    //     for(int i = 0; i < via_corners.size(); ++i) {
+    //         cout << "(" << via_corners[i].first << "," << via_corners[i].second << ")" << endl;
+    //     }
+    //     cout << endl;
+    // }
 
     return;
 }
 
-int main() {
+
+pair<vector<int>, vector<int>> remove_path(int layer) {
     stringstream copy;
     stringstream first_pass;
     stringstream second_pass;
@@ -173,13 +200,34 @@ int main() {
     first_pass << copy.str();
     second_pass << copy.str();
 
+    vector<int> removed_paths;
+    int paths_seen = 0;
     while(!first_pass.eof()) {
-        find_path(first_pass, 17);
+        find_path(first_pass, layer, removed_paths, paths_seen);
     }
 
+    for(int i = 0; i < removed_paths.size(); ++i) {
+        cout << removed_paths[i] << endl;
+    }
+    cout << endl;
+
+    vector<int> removed_vias;
+    int vias_seen = 0;
     while(!second_pass.eof()) {
-        find_vias(second_pass, 17);
+        find_vias(second_pass, layer, removed_vias, vias_seen);
     }
 
+    for(int i = 0; i < removed_vias.size(); ++i) {
+        cout << removed_vias[i] << endl;
+    }
+
+    return {removed_paths, removed_vias};
+}
+
+
+int main() {
+    
+    remove_path(19);
+    srand(25);
     return 0;
 }
