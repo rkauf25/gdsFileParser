@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <cassert>
+#include <cstdlib>
 
 using namespace std;
 
@@ -64,7 +65,7 @@ void find_path(istream &input, int layer, vector<int>& removed_paths, int& paths
         while(line != "Path start") {
             getline(input, line);
     
-            if(input.eof()) {
+            if(!input.good()) {
                 return;
             }
         }
@@ -73,7 +74,10 @@ void find_path(istream &input, int layer, vector<int>& removed_paths, int& paths
         input >> junk >> read_layer; //ingoring beginning of line (always "Layer:")
 
         if(atoi(read_layer.c_str()) == layer) {
-            break;
+            int x = rand() % 5;
+            if(x == 1) {
+                break;
+            }
         }
 
         ++paths_seen;
@@ -95,7 +99,8 @@ void find_path(istream &input, int layer, vector<int>& removed_paths, int& paths
 
     // cout << read_layer << " " << width << " " << num_coords << endl << endl;
 
-    corners = find_corners(input, num_coords);
+    vector<pair<int,int>> temp = find_corners(input, num_coords);
+    corners.insert(corners.end(), temp.begin(), temp.end());
 
     // for(int i = 0; i < corners.size(); ++i) {
     //     cout << "(" << corners[i].first << "," << corners[i].second << ")" << endl;
@@ -223,5 +228,6 @@ pair<vector<int>, vector<int>> remove_path(int layer) {
 int main() {
     
     remove_path(19);
+    srand(25);
     return 0;
 }
