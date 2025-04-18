@@ -45,7 +45,7 @@ clean:
 build:
 	mkdir -p ../lib
 	mkdir -p ../include
-	$(CXX) -c -o $(TARGET_TEMP) $(CXX_FILES) $(CXX_LIBS) 
+	$(CXX) -g -c -o $(TARGET_TEMP) $(CXX_FILES) $(CXX_LIBS) 
 	ar crf $(TARGET) $(TARGET_TEMP)
 	cp $(CXX_HEADERS) ../include/
-	$(CXX) -o $(TARGET_TEST) main.cpp -I. ../lib/libgdsFileParser.a
+	$(CXX) -g -o $(TARGET_TEST) main.cpp -I. ../lib/libgdsFileParser.a
