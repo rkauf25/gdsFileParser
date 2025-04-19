@@ -6,6 +6,8 @@
 #include <cassert>
 #include <cstdlib>
 
+#include "Removal.h"
+
 using namespace std;
 
 
@@ -74,7 +76,8 @@ void find_path(istream &input, int layer, vector<int>& removed_paths, int& paths
         input >> junk >> read_layer; //ingoring beginning of line (always "Layer:")
 
         if(atoi(read_layer.c_str()) == layer) {
-            int x = rand() % 5;
+            // int x = rand() % 5;
+            int x = 1;
             if(x == 1) {
                 break;
             }
@@ -186,14 +189,21 @@ void find_vias(istream &input, int layer, vector<int>& removed_vias, int& vias_s
 }
 
 
-pair<vector<int>, vector<int>> remove_path(int layer) {
+pair<vector<int>, vector<int>> remove_path(int layer, string pathName) {
+
+    std::ifstream fileIn(pathName, std::ios::in);
+    if (!fileIn.is_open()) {
+      std::cout << "Input Human Readable GDS File not able to be read in\n";
+      exit(1);
+    }
+
     stringstream copy;
     stringstream first_pass;
     stringstream second_pass;
     string junk;
 
-    while(!cin.eof()) {
-        getline(cin, junk);
+    while(!fileIn.eof()) {
+        getline(fileIn, junk);
         copy << junk << endl;
     }
 
@@ -206,28 +216,37 @@ pair<vector<int>, vector<int>> remove_path(int layer) {
         find_path(first_pass, layer, removed_paths, paths_seen);
     }
 
+    cout << "Paths Removing: ";
+
     for(int i = 0; i < removed_paths.size(); ++i) {
-        cout << removed_paths[i] << endl;
+        cout << removed_paths[i] << ", ";
     }
     cout << endl;
 
     vector<int> removed_vias;
-    int vias_seen = 0;
-    while(!second_pass.eof()) {
-        find_vias(second_pass, layer, removed_vias, vias_seen);
+    if (!removed_paths.empty()) {
+        int vias_seen = 0;
+        while(!second_pass.eof()) {
+            find_vias(second_pass, layer, removed_vias, vias_seen);
+        }
     }
 
+    cout << "Vias Removing: ";
+
     for(int i = 0; i < removed_vias.size(); ++i) {
-        cout << removed_vias[i] << endl;
+        cout << removed_vias[i] << ", ";
     }
+    cout << endl;
+
+    fileIn.close();
 
     return {removed_paths, removed_vias};
 }
 
 
-int main() {
+// int main() {
     
-    remove_path(19);
-    srand(25);
-    return 0;
-}
+//     remove_path(19);
+//     srand(25);
+//     return 0;
+// }

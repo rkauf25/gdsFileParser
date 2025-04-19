@@ -3,6 +3,8 @@
 #include <fstream>
 #include <sstream>
 
+#include "Removal.h"
+
 #define BOUNDARY_START 0x08
 #define PATH_START 0x09
 #define ELEMENT_END 0x11
@@ -149,12 +151,12 @@ void createRemovedOutputFile(
 int main(int argc, char **argv) {
   
   if (argc != 3) {
-    std::cout << "usage: ./outputRemoval {inputGDSFilePath} {RemovedOutputGDSFilePath}\n";
+    std::cout << "usage: ./outputRemoval {inputFileName}\n";
     exit(1);
   }
 
   std::string inputGDSFilePath = argv[1];
-  std::string outputGDSFile = argv[2];
+  // std::string outputGDSFile = argv[2];
 
   // std::ifstream inputFile(inputGDSFilePath, std::ios::binary);
   // if (!inputFile.is_open()) {
@@ -163,11 +165,34 @@ int main(int argc, char **argv) {
   // }
 
   // 1. Convert Binary GDSII file -> Human Readable GDSII file
+  MyTestParser parser;
+  return parser.parse(argv[1]);
+
 
   // 2. Determine which paths/boundaries to remove
-  std::vector<int> pathsToRemove = {0};
-  std::vector<int> boundariesToRemove = {1};
+  // std::vector<int> pathsToRemove = {0, 2};
+  // std::vector<int> boundariesToRemove = {0, 1};
+  std::pair<std::vector<int>, std::vector<int>> info = remove_path(15, "M2_Path.txt");
+
+  std::vector<int> pathsToRemove = info.first;
+  std::vector<int> boundariesToRemove = info.second;
+
+  // std::cout << "MAIN Paths Removing: ";
+
+  // for(int i = 0; i < pathsToRemove.size(); ++i) {
+  //   std::cout << pathsToRemove[i] << ", ";
+  // }
+  // std::cout << std::endl;
+
+  // std::cout << "MAIN Vias Removing: ";
+
+  // for(int i = 0; i < boundariesToRemove.size(); ++i) {
+  //   std::cout << boundariesToRemove[i] << ", ";
+  // }
+  // std::cout << std::endl;
 
   // 3. Create new output binary GDSII file with removed path/boundaries
   createRemovedOutputFile(inputGDSFilePath, outputGDSFile, pathsToRemove, boundariesToRemove);
+
+  // 4. Create human readable output
 }

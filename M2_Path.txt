@@ -1,0 +1,48 @@
+GDSII Version: 5
+Modified Time: 
+	2025-04-17 14:13:14
+Accessed Time: 
+	2025-04-18 11:51:11
+LibName: Test_LIB
+UserUnits: 0.001000000
+DBUnits: 0.000000001
+Modified Time: 
+	2025-04-17 14:13:17
+Accessed Time: 
+	2025-04-17 14:37:20
+StrName: M2_Path
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(100,0)(100,4000)
+Element end
+Path start
+Layer: 19
+Data Type: 0
+Width: 200
+XY: 3
+(0,2000)(3900,2000)(3900,1470)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(0,1900)(200,1900)(200,2100)(0,2100)(0,1900)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(0,1280)(200,1280)(200,1480)(0,1480)(0,1280)
+Element end
+Path start
+Layer: 15
+Data Type: 0
+Width: 160
+XY: 2
+(-110,1380)(630,1380)
+Element end
+Structure end
+Lib end
