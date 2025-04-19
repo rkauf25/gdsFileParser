@@ -9,15 +9,25 @@
 #define PATH_START 0x09
 #define ELEMENT_END 0x11
 
-short T_readShort(std::ifstream &input, std::stringstream &ss)
+static short
+readShort(std::ifstream &input, std::stringstream &ss)
 {
   unsigned char p[2];
   input.read((char *)&p, 2);
   ss.write(reinterpret_cast<char*>(p), sizeof(p));
-    return ((p[0]<<8) | p[1]);
+  return ((p[0]<<8) | p[1]);
 }
 
-char T_readChar(std::ifstream &input, std::stringstream &ss)
+static short
+getShort(std::ifstream &input)
+{
+  unsigned char p[2];
+  input.read((char *)&p, 2);
+  return ((p[0]<<8) | p[1]);
+}
+
+static char 
+readChar(std::ifstream &input, std::stringstream &ss)
 {
   char p;
   input.read(&p, sizeof(p));
@@ -25,9 +35,17 @@ char T_readChar(std::ifstream &input, std::stringstream &ss)
   return p;
 }
 
-void placeInOutputFile(std::ifstream &input, std::ofstream &output, std::stringstream &ss, short recordSize)
+static char 
+getChar(std::ifstream &input)
 {
-  // std::cout << "PLACING TO OUTPUT FILE\n";
+  char p;
+  input.read(&p, sizeof(p));
+  return p;
+}
+
+static void 
+placeInOutputFile(std::ifstream &input, std::ofstream &output, std::stringstream &ss, short recordSize)
+{
   output << ss.str();
 
   std::vector<char> recordLeft(recordSize-3);
@@ -35,54 +53,39 @@ void placeInOutputFile(std::ifstream &input, std::ofstream &output, std::strings
   output.write(recordLeft.data(), recordSize-3);
 }
 
-void skipRecord(std::ifstream &input, short recordSize)
+static void 
+skipRecord(std::ifstream &input, short recordSize)
 {
-  // std::cout << "SKIPPING RECORD\n";
-  std::vector<char> recordLeft(recordSize-3);
-  input.read(recordLeft.data(), recordSize-3);
+  // The first 3 bytes of the record 
+  // {2-byte record size, 1-byte record type} already read in
+  input.ignore(recordSize-3);
 }
 
-void handleElementRemoval(std::ifstream &inputFile, short recordSize) {
-  
-  // std::cout << "HANDLING ELEMENT REMOVAL\n";
-
-  std::stringstream fakeSstream(std::ios::binary | std::ios::out);
-  
-  std::vector<char> recordLeft(recordSize-3);
-  inputFile.read(recordLeft.data(), recordSize-3);
-
-  bool endFound = false;
-
-  while (!endFound) {
+static void 
+handleElementRemoval(std::ifstream &inputFile) 
+{
+  while (true) {
     
-    recordSize = T_readShort(inputFile, fakeSstream);
-    int recordType = T_readChar(inputFile, fakeSstream);
-    
-    // std::cout << "Size: " << recordSize << std::endl;
-    // std::cout << "Record Type: " << recordType << std::endl;
+    int recordSize = getShort(inputFile);
+    int recordType = getChar(inputFile);
 
     if (recordSize == 0) {
-      std::cout << "ERROR: RECORD SIZE IS 0 WHILE STILL REMOVING PATH. ENDING\n";
+      std::cerr << "ERROR: RECORD SIZE IS 0 WHILE STILL REMOVING PATH. ENDING\n";
       exit(1);
     }
-
-    if (recordType == ELEMENT_END) endFound = true;
     
     skipRecord(inputFile, recordSize);
+
+    if (recordType == ELEMENT_END) break;
   }
-
-  // std::cout << "END FOUND. DONE\n";
 }
 
-void handleBoundaryRemoval(std::ifstream &input) {
-  // std::cout << "HANDLING PATH_START REMOVAL\n";
-}
-
-void createRemovedOutputFile(
+void
+createRemovedOutputFile(
   const std::string inputGDSFilePath,
   const std::string outputGDSFilePath,
-  const std::vector<int> pathsToRemove,
-  const std::vector<int> boundariesToRemove)
+  const std::vector<int> &pathsToRemove,
+  const std::vector<int> &boundariesToRemove)
 {
   std::ifstream inputFile(inputGDSFilePath, std::ios::binary);
   if (!inputFile.is_open()) {
@@ -109,21 +112,15 @@ void createRemovedOutputFile(
     // Temporary sstream to hold data to potentially place in output
     std::stringstream binarySStream(std::ios::binary | std::ios::out);
     
-    short recordSize = T_readShort(inputFile, binarySStream);
-    int recordType = T_readChar(inputFile, binarySStream);
-    
-    // std::cout << "Size: " << recordSize << std::endl;
-    // std::cout << "Record Type: " << recordType << std::endl;
+    short recordSize = readShort(inputFile, binarySStream);
+    int recordType = readChar(inputFile, binarySStream);
 
-    if (recordSize == 0) {
-      // std::cout << "STILL BROKEN AS I'M NOT SURE HOW THE END OF THE FILE IS SUPPOSE TO BEHAVE\n";
-      // std::cout << "RECORD SIZE IS 0. ENDING\n";
-      break;
-    }
+    if (recordSize == 0) break;
 
     if ((pathsToRemoveVecIdx < pathsToRemove.size()) && (recordType == PATH_START)) {
       if (pathsToRemove[pathsToRemoveVecIdx] == pathsFound) {
-        handleElementRemoval(inputFile, recordSize);
+        skipRecord(inputFile, recordSize);
+        handleElementRemoval(inputFile);
         ++pathsFound;
         ++pathsToRemoveVecIdx;
         continue;
@@ -133,7 +130,8 @@ void createRemovedOutputFile(
 
     if ((boundariesToRemoveVecIdx < boundariesToRemove.size()) && (recordType == BOUNDARY_START)) {
       if (boundariesToRemove[boundariesToRemoveVecIdx] == boundariesFound) {
-        handleElementRemoval(inputFile, recordSize);
+        skipRecord(inputFile, recordSize);
+        handleElementRemoval(inputFile);
         ++boundariesFound;
         ++boundariesToRemoveVecIdx;
         continue;

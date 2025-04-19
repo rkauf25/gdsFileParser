@@ -12,5 +12,5 @@ void
 createRemovedOutputFile(
   const std::string inputGDSFilePath,
   const std::string outputGDSFilePath,
-  const std::vector<int> pathsToRemove,
-  const std::vector<int> boundariesToRemove);
+  const std::vector<int> &pathsToRemove,
+  const std::vector<int> &boundariesToRemove);
