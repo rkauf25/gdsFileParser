@@ -33,9 +33,12 @@ default: 	build
 CXX         := /usr/bin/g++
 TARGET		:= ../lib/libgdsFileParser.a
 TARGET_TEMP	:= gdsFileParser.o
-TARGET_TEST := testParser
+# TARGET_TEST := testParser
+TARGET_TEST := testRemovalParser
 CXX_FILES 	:= gdsFileParser.cpp
 CXX_HEADERS := gdsFileParser.h
+
+
 
 clean:
 	rm $(TARGET)
@@ -48,4 +51,4 @@ build:
 	$(CXX) -g -c -o $(TARGET_TEMP) $(CXX_FILES) $(CXX_LIBS) 
 	ar crf $(TARGET) $(TARGET_TEMP)
 	cp $(CXX_HEADERS) ../include/
-	$(CXX) -g -o $(TARGET_TEST) main.cpp -I. ../lib/libgdsFileParser.a
+	$(CXX) -g -o $(TARGET_TEST) Readable_GDS_Parser.cpp OutputRemoval.cpp main.cpp -I. ../lib/libgdsFileParser.a
