@@ -101,8 +101,6 @@ void find_path(istream &input, int layer, vector<int>& removed_paths, int& paths
 
     getline(input, junk); // reading endline
 
-    // cout << read_layer << " " << width << " " << num_coords << endl << endl;
-
     vector<pair<int,int>> temp = find_corners(input, num_coords);
     corners.insert(corners.end(), temp.begin(), temp.end());
 
@@ -113,11 +111,6 @@ void find_path(istream &input, int layer, vector<int>& removed_paths, int& paths
 
         width.push_back(curr_width);
     }
-
-    // for(int i = 0; i < corners.size(); ++i) {
-    //     cout << "(" << corners[i].first << "," << corners[i].second << ")" << endl;
-    // }
-    // cout << endl;
 
     return;
 
@@ -146,7 +139,6 @@ void find_vias(istream &input, int layer, vector<int>& removed_vias, int& vias_s
         }
 
         ++vias_seen;
-        // cout << "vias: " << vias_seen << endl;
     }
 
 
@@ -186,19 +178,11 @@ void find_vias(istream &input, int layer, vector<int>& removed_vias, int& vias_s
     }
     ++vias_seen;
 
-    // if(inside_path) {
-    //     cout << read_layer << endl;
-    //     for(int i = 0; i < via_corners.size(); ++i) {
-    //         cout << "(" << via_corners[i].first << "," << via_corners[i].second << ")" << endl;
-    //     }
-    //     cout << endl;
-    // }
-
     return;
 }
 
 
-pair<vector<int>, vector<int>> remove_path(int layer, string pathName) {
+void remove_path(int layer, string pathName, vector<int> &removed_paths, vector<int> &removed_vias) {
 
     std::ifstream fileIn(pathName, std::ios::in);
     if (!fileIn.is_open()) {
@@ -219,20 +203,11 @@ pair<vector<int>, vector<int>> remove_path(int layer, string pathName) {
     first_pass << copy.str();
     second_pass << copy.str();
 
-    vector<int> removed_paths;
     int paths_seen = 0;
     while(!first_pass.eof()) {
         find_path(first_pass, layer, removed_paths, paths_seen);
     }
 
-    // cout << "Paths Removing: ";
-
-    // for(int i = 0; i < removed_paths.size(); ++i) {
-    //     cout << removed_paths[i] << ", ";
-    // }
-    // cout << endl;
-
-    vector<int> removed_vias;
     if (!removed_paths.empty()) {
         int vias_seen = 0;
         while(!second_pass.eof()) {
@@ -240,22 +215,7 @@ pair<vector<int>, vector<int>> remove_path(int layer, string pathName) {
         }
     }
 
-    // cout << "Vias Removing: ";
-
-    // for(int i = 0; i < removed_vias.size(); ++i) {
-    //     cout << removed_vias[i] << ", ";
-    // }
-    // cout << endl;
-
     fileIn.close();
 
-    return {removed_paths, removed_vias};
+    return;
 }
-
-
-// int main() {
-    
-//     remove_path(15, "../M2_Path.txt");
-//     srand(25);
-//     return 0;
-// }

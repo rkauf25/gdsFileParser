@@ -215,7 +215,6 @@ int main(int argc, char **argv) {
     }
 
     std::string inputGDSFilePath = argv[1];
-    // std::string outputGDSFile = argv[2];
 
     std::string modifiedInputPath = inputGDSFilePath.substr(0, inputGDSFilePath.length() - 4);
 
@@ -227,16 +226,14 @@ int main(int argc, char **argv) {
     MyTestParser parser(humanReadableInputFilePath.c_str());
     parser.parse(inputGDSFilePath.c_str());
 
-    // // 2. Determine which paths/boundaries to remove
-    std::pair<std::vector<int>, std::vector<int>> info = remove_path(15, humanReadableInputFilePath);
-
-    std::vector<int> pathsToRemove = info.first;
-    std::vector<int> boundariesToRemove = info.second;
+    // 2. Determine which paths/boundaries to remove
+    std::vector<int> pathsToRemove, boundariesToRemove;
+    remove_path(15, humanReadableInputFilePath, pathsToRemove, boundariesToRemove);
 
     // 3. Create new output binary GDSII file with removed path/boundaries
     createRemovedOutputFile(inputGDSFilePath, outputGDSFilePath, pathsToRemove, boundariesToRemove);
 
-    // // 4. Create human readable output
+    // 4. Create human readable output
     MyTestParser parser2(humanReadableOutputFilePath.c_str());
     parser2.parse(outputGDSFilePath.c_str());
 }

@@ -1,9 +1,15 @@
 #include <vector>
 #include <string>
 
-std::pair<std::vector<int>, std::vector<int>> remove_path(int layer, std::string pathName);
+void
+remove_path(
+  int layer,
+  std::string pathName,
+  std::vector<int> &removed_paths,
+  std::vector<int> &removed_vias);
 
-void createRemovedOutputFile(
+void 
+createRemovedOutputFile(
   const std::string inputGDSFilePath,
   const std::string outputGDSFilePath,
   const std::vector<int> pathsToRemove,
