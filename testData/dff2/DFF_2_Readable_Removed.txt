@@ -1,0 +1,1772 @@
+GDSII Version: 5
+Modified Time: 
+	2025-01-23 13:51:39
+Accessed Time: 
+	2025-04-18 15:12:11
+LibName: CAD2_LIB
+UserUnits: 0.001000000
+DBUnits: 0.000000001
+Modified Time: 
+	2025-01-17 16:33:38
+Accessed Time: 
+	2025-04-10 14:56:29
+StrName: DFF
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(10440,850)(10820,850)(10820,1010)(10440,1010)(10440,850)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(6180,690)(6220,690)(6220,840)(6180,840)(6180,690)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(6120,840)(6220,840)(6220,1160)(6120,1160)(6120,840)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(1460,1440)(1480,1440)(1480,1760)(1460,1760)(1460,1440)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(8080,1760)(8400,1760)(8400,2040)(8080,2040)(8080,1760)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(5320,850)(5370,850)(5370,1170)(5320,1170)(5320,850)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(12500,410)(12780,410)(12780,690)(12500,690)(12500,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(12500,2200)(12780,2200)(12780,2760)(12500,2760)(12500,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(12140,1280)(12460,1280)(12460,1560)(12140,1560)(12140,1280)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(12020,410)(12300,410)(12300,690)(12020,690)(12020,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(12020,2200)(12300,2200)(12300,2760)(12020,2760)(12020,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(11480,410)(11760,410)(11760,690)(11480,690)(11480,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(11480,2200)(11760,2200)(11760,2760)(11480,2760)(11480,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(11120,1260)(11500,1260)(11500,1580)(11120,1580)(11120,1260)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(11000,410)(11280,410)(11280,690)(11000,690)(11000,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(11000,2200)(11280,2200)(11280,2760)(11000,2760)(11000,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(10540,410)(10820,410)(10820,690)(10540,690)(10540,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(10540,2200)(10820,2200)(10820,2760)(10540,2760)(10540,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(10120,1260)(10500,1260)(10500,1580)(10120,1580)(10120,1260)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(10060,410)(10340,410)(10340,690)(10060,690)(10060,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(10060,2200)(10340,2200)(10340,2760)(10060,2760)(10060,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(9600,2200)(9880,2200)(9880,2760)(9600,2760)(9600,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(9600,410)(9880,410)(9880,970)(9600,970)(9600,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(9500,1760)(9960,1760)(9960,2040)(9500,2040)(9500,1760)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(9120,2200)(9400,2200)(9400,2760)(9120,2760)(9120,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(8520,1130)(9020,1130)(9020,1450)(8520,1450)(8520,1130)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(8640,410)(8920,410)(8920,970)(8640,970)(8640,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(8640,2200)(8920,2200)(8920,2760)(8640,2760)(8640,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(4880,1280)(5200,1280)(5200,1560)(4880,1560)(4880,1280)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(4760,2200)(5040,2200)(5040,2760)(4760,2760)(4760,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(4760,410)(5040,410)(5040,690)(4760,690)(4760,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(5240,410)(5520,410)(5520,690)(5240,690)(5240,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(5240,2200)(5520,2200)(5520,2760)(5240,2760)(5240,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(4300,410)(4580,410)(4580,690)(4300,690)(4300,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(4300,2200)(4580,2200)(4580,2760)(4300,2760)(4300,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(3940,1720)(4280,1720)(4280,2040)(3940,2040)(3940,1720)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(3820,410)(4100,410)(4100,690)(3820,690)(3820,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(3820,2200)(4100,2200)(4100,2760)(3820,2760)(3820,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(7700,2480)(7980,2480)(7980,2760)(7700,2760)(7700,2480)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(8180,2480)(8460,2480)(8460,2760)(8180,2760)(8180,2480)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(7700,410)(7980,410)(7980,690)(7700,690)(7700,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(8180,410)(8460,410)(8460,690)(8180,690)(8180,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(7320,1700)(7600,1700)(7600,2020)(7320,2020)(7320,1700)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(7320,1140)(7600,1140)(7600,1460)(7320,1460)(7320,1140)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(6920,2480)(7220,2480)(7220,2760)(6920,2760)(6920,2480)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(6940,410)(7220,410)(7220,690)(6940,690)(6940,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(6520,1720)(6840,1720)(6840,2040)(6520,2040)(6520,1720)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(6520,1240)(6840,1240)(6840,1560)(6520,1560)(6520,1240)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(6180,410)(6460,410)(6460,690)(6180,690)(6180,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(6180,2200)(6460,2200)(6460,2760)(6180,2760)(6180,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(5680,1290)(6020,1290)(6020,1610)(5680,1610)(5680,1290)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(5700,410)(5980,410)(5980,690)(5700,690)(5700,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(5700,2200)(5980,2200)(5980,2760)(5700,2760)(5700,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(480,410)(760,410)(760,690)(480,690)(480,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(480,2200)(760,2200)(760,2760)(480,2760)(480,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(0,1280)(380,1280)(380,1560)(0,1560)(0,1280)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(0,410)(280,410)(280,690)(0,690)(0,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(0,2200)(280,2200)(280,2760)(0,2760)(0,2200)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(0,-240)(12800,-240)(12800,240)(0,240)(0,-240)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(0,2960)(12800,2960)(12800,3440)(0,3440)(0,2960)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(1240,410)(1520,410)(1520,690)(1240,690)(1240,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(1620,850)(1900,850)(1900,1170)(1620,1170)(1620,850)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(1940,410)(2220,410)(2220,690)(1940,690)(1940,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(2400,2480)(2680,2480)(2680,2760)(2400,2760)(2400,2480)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(3360,410)(3640,410)(3640,690)(3360,690)(3360,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(3360,2480)(3640,2480)(3640,2760)(3360,2760)(3360,2480)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(2400,410)(2680,410)(2680,690)(2400,690)(2400,410)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(1620,2000)(1900,2000)(1900,2320)(1620,2320)(1620,2000)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(860,1140)(1140,1140)(1140,1460)(860,1460)(860,1140)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(2880,2480)(3160,2480)(3160,2760)(2880,2760)(2880,2480)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(860,1700)(1140,1700)(1140,2020)(860,2020)(860,1700)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(1240,2480)(1520,2480)(1520,2760)(1240,2760)(1240,2480)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(1940,2480)(2220,2480)(2220,2760)(1940,2760)(1940,2480)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(3260,1130)(3540,1130)(3540,1450)(3260,1450)(3260,1130)
+Element end
+Boundry start
+Layer: 15
+Data Type: 0
+XY: 5
+(2440,1760)(2780,1760)(2780,2040)(2440,2040)(2440,1760)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(2460,470)(3580,470)(3580,630)(2460,630)(2460,470)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(2400,410)(2680,410)(2680,690)(2400,690)(2400,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(3360,410)(3640,410)(3640,690)(3360,690)(3360,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(12020,410)(12780,410)(12780,690)(12020,690)(12020,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(12020,2200)(12780,2200)(12780,2760)(12020,2760)(12020,2200)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(4760,410)(5520,410)(5520,690)(4760,690)(4760,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(4760,2200)(5520,2200)(5520,2760)(4760,2760)(4760,2200)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(11000,410)(11840,410)(11840,690)(11000,690)(11000,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(11000,2200)(11840,2200)(11840,2760)(11000,2760)(11000,2200)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(10060,2200)(10820,2200)(10820,2760)(10060,2760)(10060,2200)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(8640,410)(9880,410)(9880,970)(8640,970)(8640,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(8640,2200)(9880,2200)(9880,2760)(8640,2760)(8640,2200)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(10060,410)(10820,410)(10820,690)(10060,690)(10060,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(10060,2200)(10820,2200)(10820,2760)(10060,2760)(10060,2200)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(3820,2200)(4580,2200)(4580,2760)(3820,2760)(3820,2200)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(3820,410)(4580,410)(4580,690)(3820,690)(3820,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(5700,2200)(6460,2200)(6460,2760)(5700,2760)(5700,2200)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(5700,410)(8460,410)(8460,690)(5700,690)(5700,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(6460,2480)(8460,2480)(8460,2760)(6460,2760)(6460,2480)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(0,410)(2220,410)(2220,690)(0,690)(0,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(0,2200)(760,2200)(760,2760)(0,2760)(0,2200)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(60,-140)(12740,-140)(12740,140)(60,140)(60,-140)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(60,3060)(12740,3060)(12740,3340)(60,3340)(60,3060)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(2400,410)(3640,410)(3640,690)(2400,690)(2400,410)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(2400,2480)(3640,2480)(3640,2760)(2400,2760)(2400,2480)
+Element end
+Boundry start
+Layer: 2
+Data Type: 0
+XY: 5
+(760,2480)(2220,2480)(2220,2760)(760,2760)(760,2480)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(12520,-80)(12680,-80)(12680,80)(12520,80)(12520,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(11720,-80)(11880,-80)(11880,80)(11720,80)(11720,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(11320,-80)(11480,-80)(11480,80)(11320,80)(11320,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(12520,3120)(12680,3120)(12680,3280)(12520,3280)(12520,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(11720,3120)(11880,3120)(11880,3280)(11720,3280)(11720,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(11320,3120)(11480,3120)(11480,3280)(11320,3280)(11320,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(9560,1820)(9720,1820)(9720,1980)(9560,1980)(9560,1820)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(8800,1190)(8960,1190)(8960,1350)(8800,1350)(8800,1190)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(4040,1820)(4200,1820)(4200,1980)(4040,1980)(4040,1820)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(7380,1800)(7540,1800)(7540,1960)(7380,1960)(7380,1800)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(7380,1200)(7540,1200)(7540,1360)(7380,1360)(7380,1200)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(6620,1320)(6780,1320)(6780,1480)(6620,1480)(6620,1320)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(6620,1820)(6780,1820)(6780,1980)(6620,1980)(6620,1820)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(5800,1350)(5960,1350)(5960,1510)(5800,1510)(5800,1350)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(160,1340)(320,1340)(320,1500)(160,1500)(160,1340)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(10520,-80)(10680,-80)(10680,80)(10520,80)(10520,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(9720,-80)(9880,-80)(9880,80)(9720,80)(9720,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(9320,-80)(9480,-80)(9480,80)(9320,80)(9320,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(8920,-80)(9080,-80)(9080,80)(8920,80)(8920,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(7720,-80)(7880,-80)(7880,80)(7720,80)(7720,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(7320,-80)(7480,-80)(7480,80)(7320,80)(7320,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(6920,-80)(7080,-80)(7080,80)(6920,80)(6920,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(6520,-80)(6680,-80)(6680,80)(6520,80)(6520,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(6120,-80)(6280,-80)(6280,80)(6120,80)(6120,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(5320,-80)(5480,-80)(5480,80)(5320,80)(5320,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(4520,-80)(4680,-80)(4680,80)(4520,80)(4520,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(4120,-80)(4280,-80)(4280,80)(4120,80)(4120,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(2920,-80)(3080,-80)(3080,80)(2920,80)(2920,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(2520,-80)(2680,-80)(2680,80)(2520,80)(2520,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(2120,-80)(2280,-80)(2280,80)(2120,80)(2120,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(1720,-80)(1880,-80)(1880,80)(1720,80)(1720,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(1320,-80)(1480,-80)(1480,80)(1320,80)(1320,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(920,-80)(1080,-80)(1080,80)(920,80)(920,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(520,-80)(680,-80)(680,80)(520,80)(520,-80)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(10520,3120)(10680,3120)(10680,3280)(10520,3280)(10520,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(9320,3120)(9480,3120)(9480,3280)(9320,3280)(9320,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(8920,3120)(9080,3120)(9080,3280)(8920,3280)(8920,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(7720,3120)(7880,3120)(7880,3280)(7720,3280)(7720,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(7320,3120)(7480,3120)(7480,3280)(7320,3280)(7320,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(6920,3120)(7080,3120)(7080,3280)(6920,3280)(6920,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(6520,3120)(6680,3120)(6680,3280)(6520,3280)(6520,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(6120,3120)(6280,3120)(6280,3280)(6120,3280)(6120,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(5320,3120)(5480,3120)(5480,3280)(5320,3280)(5320,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(4520,3120)(4680,3120)(4680,3280)(4520,3280)(4520,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(4120,3120)(4280,3120)(4280,3280)(4120,3280)(4120,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(2920,3120)(3080,3120)(3080,3280)(2920,3280)(2920,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(2120,3120)(2280,3120)(2280,3280)(2120,3280)(2120,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(1720,3120)(1880,3120)(1880,3280)(1720,3280)(1720,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(1320,3120)(1480,3120)(1480,3280)(1320,3280)(1320,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(920,3120)(1080,3120)(1080,3280)(920,3280)(920,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(520,3120)(680,3120)(680,3280)(520,3280)(520,3120)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(1680,910)(1840,910)(1840,1070)(1680,1070)(1680,910)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(920,1800)(1080,1800)(1080,1960)(920,1960)(920,1800)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(920,1200)(1080,1200)(1080,1360)(920,1360)(920,1200)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(1680,2100)(1840,2100)(1840,2260)(1680,2260)(1680,2100)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(2560,1820)(2720,1820)(2720,1980)(2560,1980)(2560,1820)
+Element end
+Boundry start
+Layer: 14
+Data Type: 0
+XY: 5
+(3320,1190)(3480,1190)(3480,1350)(3320,1350)(3320,1190)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(8080,1800)(8360,1800)(8360,2000)(8080,2000)(8080,1800)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(12400,2990)(12400,180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(12220,1320)(12410,1320)(12410,1520)(12220,1520)(12220,1320)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(9540,1800)(9740,1800)(9740,2000)(9540,2000)(9540,1800)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(9500,2990)(9500,180)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(9020,2990)(9020,180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(8780,1170)(8980,1170)(8980,1370)(8780,1370)(8780,1170)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(10260,1320)(10380,1320)(10380,1520)(10260,1520)(10260,1320)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(10440,2990)(10440,180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(11200,1320)(11320,1320)(11320,1520)(11200,1520)(11200,1320)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(11380,2990)(11380,180)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(5140,2990)(5140,180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(4960,1320)(5080,1320)(5080,1520)(4960,1520)(4960,1320)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(4200,2990)(4200,180)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(380,2990)(380,180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(4020,1800)(4140,1800)(4140,2000)(4020,2000)(4020,1800)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(8080,2990)(8080,180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(7360,1180)(7560,1180)(7560,1380)(7360,1380)(7360,1180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(7360,1780)(7560,1780)(7560,1980)(7360,1980)(7360,1780)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(7460,180)(7460,1380)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(7460,1780)(7460,2990)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(6600,1300)(6800,1300)(6800,1500)(6600,1500)(6600,1300)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(6600,1800)(6800,1800)(6800,2000)(6600,2000)(6600,1800)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(6700,180)(6700,1380)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(6700,1780)(6700,2990)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(6080,2990)(6080,180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(5780,1330)(6080,1330)(6080,1530)(5780,1530)(5780,1330)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(380,2990)(380,180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(140,1320)(380,1320)(380,1520)(140,1520)(140,1320)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(1000,180)(1000,1380)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(900,1780)(1100,1780)(1100,1980)(900,1980)(900,1780)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(3260,2990)(3260,180)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(1730,180)(1730,1380)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(1000,1780)(1000,2990)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(2780,2990)(2780,180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(2540,1800)(2740,1800)(2740,2000)(2540,2000)(2540,1800)
+Element end
+Path start
+Layer: 7
+Data Type: 0
+Width: 120
+XY: 2
+(1730,1780)(1730,2990)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(1660,2080)(1860,2080)(1860,2280)(1660,2280)(1660,2080)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(1660,890)(1860,890)(1860,1090)(1660,1090)(1660,890)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(900,1180)(1100,1180)(1100,1380)(900,1380)(900,1180)
+Element end
+Boundry start
+Layer: 7
+Data Type: 0
+XY: 5
+(3300,1170)(3500,1170)(3500,1370)(3300,1370)(3300,1170)
+Element end
+Boundry start
+Layer: 6
+Data Type: 34
+XY: 5
+(-270,-570)(12970,-570)(12970,3850)(-270,3850)(-270,-570)
+Element end
+Boundry start
+Layer: 10
+Data Type: 0
+XY: 5
+(-350,1500)(13170,1500)(13170,3040)(-350,3040)(-350,1500)
+Element end
+Boundry start
+Layer: 10
+Data Type: 0
+XY: 5
+(60,-140)(12740,-140)(12740,140)(60,140)(60,-140)
+Element end
+Boundry start
+Layer: 4
+Data Type: 0
+XY: 5
+(-500,1300)(13320,1300)(13320,3710)(-500,3710)(-500,1300)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(9700,2900)(9900,2900)(9900,3100)(9700,3100)(9700,2900)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(3300,2900)(3500,2900)(3500,3100)(3300,3100)(3300,2900)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(10100,1700)(10300,1700)(10300,1900)(10100,1900)(10100,1700)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(11300,1700)(11500,1700)(11500,1900)(11300,1900)(11300,1700)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(8100,1700)(8300,1700)(8300,1900)(8100,1900)(8100,1700)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(9300,1700)(9500,1700)(9500,1900)(9300,1900)(9300,1700)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(8500,2500)(8700,2500)(8700,2700)(8500,2700)(8500,2500)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(6900,2500)(7100,2500)(7100,2700)(6900,2700)(6900,2500)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(6100,2500)(6300,2500)(6300,2700)(6100,2700)(6100,2500)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(2500,2500)(2700,2500)(2700,2700)(2500,2700)(2500,2500)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(6500,500)(6700,500)(6700,700)(6500,700)(6500,500)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(7300,2100)(7500,2100)(7500,2300)(7300,2300)(7300,2100)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(7300,900)(7500,900)(7500,1100)(7300,1100)(7300,900)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(6500,1700)(6700,1700)(6700,1900)(6500,1900)(6500,1700)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(5700,1300)(5900,1300)(5900,1500)(5700,1500)(5700,1300)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(1300,1300)(1500,1300)(1500,1500)(1300,1500)(1300,1300)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(900,900)(1100,900)(1100,1100)(900,1100)(900,900)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(1700,500)(1900,500)(1900,700)(1700,700)(1700,500)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(5300,500)(5500,500)(5500,700)(5300,700)(5300,500)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(5300,2100)(5500,2100)(5500,2300)(5300,2300)(5300,2100)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(4500,1700)(4700,1700)(4700,1900)(4500,1900)(4500,1700)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(4500,900)(4700,900)(4700,1100)(4500,1100)(4500,900)
+Element end
+Boundry start
+Layer: 18
+Data Type: 0
+XY: 5
+(1700,1700)(1900,1700)(1900,1900)(1700,1900)(1700,1700)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(4100,1780)(4300,1780)(4300,1980)(4100,1980)(4100,1780)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(9700,1800)(9900,1800)(9900,2000)(9700,2000)(9700,1800)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(2500,1860)(2700,1860)(2700,2060)(2500,2060)(2500,1860)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(7300,1760)(7500,1760)(7500,1960)(7300,1960)(7300,1760)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(6500,1780)(6700,1780)(6700,1980)(6500,1980)(6500,1780)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(7300,1200)(7500,1200)(7500,1400)(7300,1400)(7300,1200)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(6500,1300)(6700,1300)(6700,1500)(6500,1500)(6500,1300)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(5700,1350)(5900,1350)(5900,1550)(5700,1550)(5700,1350)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(900,1200)(1100,1200)(1100,1400)(900,1400)(900,1200)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(1700,910)(1900,910)(1900,1110)(1700,1110)(1700,910)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(1700,2060)(1900,2060)(1900,2260)(1700,2260)(1700,2060)
+Element end
+Boundry start
+Layer: 16
+Data Type: 0
+XY: 5
+(3300,1190)(3500,1190)(3500,1390)(3300,1390)(3300,1190)
+Element end
+Text start
+Layer: 15
+Text Type: 20
+Font: 0
+Valign: 4
+Halign: 1
+Strans: 0
+Mag: 0.200000000
+XY: 1
+(12740,1400)
+String: Qb
+Element end
+Text start
+Layer: 15
+Text Type: 20
+Font: 0
+Valign: 4
+Halign: 1
+Strans: 0
+Mag: 0.200000000
+XY: 1
+(3400,1280)
+String: RSTn
+Element end
+Text start
+Layer: 15
+Text Type: 20
+Font: 0
+Valign: 4
+Halign: 1
+Strans: 0
+Mag: 0.200000000
+XY: 1
+(3950,0)
+String: VSS!
+Element end
+Text start
+Layer: 15
+Text Type: 20
+Font: 0
+Valign: 4
+Halign: 1
+Strans: 0
+Mag: 0.200000000
+XY: 1
+(3210,3200)
+String: VDD!
+Element end
+Text start
+Layer: 15
+Text Type: 20
+Font: 0
+Valign: 4
+Halign: 1
+Strans: 0
+Mag: 0.200000000
+XY: 1
+(10760,1400)
+String: Q
+Element end
+Text start
+Layer: 15
+Text Type: 20
+Font: 0
+Valign: 4
+Halign: 1
+Strans: 0
+Mag: 0.200000000
+XY: 1
+(4100,1910)
+String: CLK
+Element end
+Text start
+Layer: 15
+Text Type: 20
+Font: 0
+Valign: 4
+Halign: 1
+Strans: 0
+Mag: 0.200000000
+XY: 1
+(190,1400)
+String: D
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(10600,1030)(10600,-240)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(4200,1780)(4200,3440)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(9800,3100)(9800,1800)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(3400,1190)(3400,3440)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(10200,1900)(10200,1300)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(11400,1900)(11400,1300)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(8200,1400)(8200,2000)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(9400,1300)(9400,1900)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(8600,2700)(8600,1190)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(7000,2700)(7000,2100)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(6200,900)(6200,2700)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(2600,1860)(2600,2700)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(7400,1700)(7400,2300)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(6600,1700)(6600,2300)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(7400,1400)(7400,800)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(6600,1500)(6600,500)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(5800,1210)(5800,1810)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(1400,1200)(1400,1800)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(1000,840)(1000,1440)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(1800,500)(1800,1110)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(5400,2300)(5400,500)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(1800,1700)(1800,2300)
+Element end
+Path start
+Layer: 17
+Data Type: 0
+Width: 200
+XY: 2
+(4600,1900)(4600,900)
+Element end
+Path start
+Layer: 19
+Data Type: 0
+Width: 200
+XY: 2
+(3300,3000)(9900,3000)
+Element end
+Path start
+Layer: 19
+Data Type: 0
+Width: 200
+XY: 2
+(8100,1800)(11500,1800)
+Element end
+Path start
+Layer: 19
+Data Type: 0
+Width: 200
+XY: 2
+(6900,2600)(8700,2600)
+Element end
+Path start
+Layer: 19
+Data Type: 0
+Width: 200
+XY: 2
+(2500,2600)(6300,2600)
+Element end
+Path start
+Layer: 19
+Data Type: 0
+Width: 200
+XY: 2
+(1300,1400)(5900,1400)
+Element end
+Path start
+Layer: 19
+Data Type: 0
+Width: 200
+XY: 2
+(7500,2200)(900,2200)
+Element end
+Path start
+Layer: 19
+Data Type: 0
+Width: 200
+XY: 2
+(6700,600)(1700,600)
+Element end
+Path start
+Layer: 19
+Data Type: 0
+Width: 200
+XY: 2
+(1700,1800)(6700,1800)
+Element end
+Path start
+Layer: 19
+Data Type: 0
+Width: 200
+XY: 2
+(7500,1000)(900,1000)
+Element end
+Structure end
+Lib end
