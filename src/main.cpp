@@ -203,11 +203,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cstdlib>
 
 #include "MyTestParser.h"
 #include "Removal.h"
 
 int main(int argc, char **argv) {
+
+    int x = rand() % 2;
+    int layer = x == 1 ? 19 : 17;
   
     if (argc != 2) {
         std::cout << "usage: ./outputRemoval {inputFileName}\n";
@@ -228,7 +232,7 @@ int main(int argc, char **argv) {
 
     // 2. Determine which paths/boundaries to remove
     std::vector<int> pathsToRemove, boundariesToRemove;
-    remove_path(15, humanReadableInputFilePath, pathsToRemove, boundariesToRemove);
+    remove_path(layer, humanReadableInputFilePath, pathsToRemove, boundariesToRemove);
 
     // 3. Create new output binary GDSII file with removed path/boundaries
     createRemovedOutputFile(inputGDSFilePath, outputGDSFilePath, pathsToRemove, boundariesToRemove);
